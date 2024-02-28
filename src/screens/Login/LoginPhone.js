@@ -48,12 +48,12 @@ const LoginPhone = () => {
         <ImageBackground
           className="mainContainer"
           source={require('../../assets/images/bgPhoneImage.png')}
-          style={[loginStyles.backgroundImage, {backgroundColor:"pink"}]}
+          style={[loginStyles.backgroundImage, {backgroundColor: 'pink'}]}
           resizeMode="center">
           <LoginHeader />
 
           <View style={{flex: 1, justifyContent: 'flex-end'}}>
-            <View style={[loginCardStyles.card, {backgroundColor:"black"}]}>
+            <View style={[loginCardStyles.card, {backgroundColor: 'black'}]}>
               <View
                 style={{
                   flexDirection: 'row',
@@ -62,7 +62,9 @@ const LoginPhone = () => {
                   marginTop: 19,
                 }}>
                 <View style={loginCardStyles.cardTitleBox}>
-                  <Text style={[loginCardStyles.cardTitle, {color: "white"}]}>Insta Login</Text>
+                  <Text style={[loginCardStyles.cardTitle, {color: 'white'}]}>
+                    Insta Login
+                  </Text>
                 </View>
               </View>
 
@@ -73,7 +75,6 @@ const LoginPhone = () => {
                 <FilledButton btnText={'Send OTP'} />
               </TouchableOpacity>
               <OutlinedButton btnText={'Login with email'} />
-
               <Text
                 style={{
                   marginTop: 15,
